@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#10191d" />
+    <title>麒麟踏雪 · 横板叙事收集游戏</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="game-shell" aria-label="麒麟踏雪游戏">
+      <canvas
+        id="game"
+        aria-describedby="ai-disclosure"
+        width="1280"
+        height="720"
+        tabindex="0"
+        aria-label="横板叙事游戏画布。移动鼠标靠近场景要素，按 E 互动，按 Tab 切换要素。"
+      ></canvas>
+      <p id="ai-disclosure" class="sr-only">本作含人工智能生成内容。场景插画与人物头像由生成式人工智能绘制，部分叙事文本经人工智能辅助生成，再经人工筛选、改写与校对。麒麟舞的民俗背景、扎作工序与进校园流程依据公开资料整理，供了解与体验之用；如作研究或引用，请以原始文献为准。</p>
+      <p id="sr-status" class="sr-only" aria-live="polite"></p>
+      <noscript>这个游戏需要启用 JavaScript 才能游玩。</noscript>
+    </main>
+    <section id="loading-screen" role="status" aria-live="polite">
+      <div class="loading-mark" aria-hidden="true">麟</div>
+      <p class="loading-kicker">横板叙事收集游戏</p>
+      <h1 id="loading-title">正在展开麒麟踏雪</h1>
+      <div class="loading-track" aria-hidden="true">
+        <div id="loading-fill"></div>
+      </div>
+      <p id="loading-copy">正在加载场景素材…</p>
+    </section>
+    <script src="story.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
